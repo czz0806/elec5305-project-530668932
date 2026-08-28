@@ -66,6 +66,7 @@ The project is expected to demonstrate the strengths and limitations of both noi
 1. Boll, S. F. (1979). Suppression of acoustic noise in speech using spectral subtraction. *IEEE Transactions on Acoustics, Speech, and Signal Processing, 27*(2), 113–120.
 2. Loizou, P. C. (2013). *Speech Enhancement: Theory and Practice* (2nd ed.). CRC Press.
 3. Dubey, H., et al. (2023). ICASSP 2023 Deep Noise Suppression Challenge. *IEEE International Conference on Acoustics, Speech and Signal Processing*.
+4. Scalart, P., and Filho, J. V. (1996). Speech enhancement based on a priori signal-to-noise estimation. *Proceedings of the IEEE International Conference on Acoustics, Speech, and Signal Processing, 2*, 629–632. https://doi.org/10.1109/ICASSP.1996.543199
 
 ## Project Proposal
 
