@@ -69,5 +69,5 @@ The project is expected to demonstrate the strengths and limitations of both noi
 
 ## Project Proposal
 
-The full project proposal PDF will be uploaded to this repository.
+The full project proposal is available here: [Download the Project Proposal PDF](ELEC5305_Project_Proposal_Zhizhong_Chen.pdf).
 
