@@ -1,0 +1,4 @@
+method,outputSNR_dB,snrImprovement_dB
+Noisy input,-1.14187919049961e-05,0
+Spectral subtraction,2.6224057326707,2.62241715146261
+Wiener filter,3.59745416507987,3.59746558387177

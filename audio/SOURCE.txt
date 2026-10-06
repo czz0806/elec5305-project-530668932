@@ -1,0 +1,15 @@
+ELEC5305 Feedback Two - Preliminary Audio Pair
+
+Source: Microsoft Deep Noise Suppression (DNS) Challenge
+Official repository: https://github.com/microsoft/DNS-Challenge
+Branch: interspeech2020/master
+Dataset path: datasets/test_set/synthetic/no_reverb/
+
+Files:
+1. clean_fileid_268.wav
+   Clean speech reference.
+2. clnsp102_traffic_248091_3_snr0_tl-21_fileid_268.wav
+   Matching noisy speech with traffic noise at 0 dB input SNR.
+
+These files are an aligned 10-second, 16 kHz test pair from the official
+DNS Challenge repository. They are used here for a preliminary prototype.

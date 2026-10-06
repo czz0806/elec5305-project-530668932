@@ -1,0 +1,16 @@
+ELEC5305 Project Feedback Two - Preliminary Results
+Input: Microsoft DNS Challenge traffic-noise pair, file ID 268
+Sample rate: 16000 Hz
+Duration: 10.00 seconds
+Frame length: 512 samples (32.0 ms)
+Hop length: 256 samples (50 percent overlap)
+
+Input SNR: -0.000 dB
+Spectral-subtraction output SNR: 2.622 dB
+Spectral-subtraction SNR improvement: 2.622 dB
+Wiener-filter output SNR: 3.597 dB
+Wiener-filter SNR improvement: 3.597 dB
+
+Limitation: this preliminary prototype uses one aligned pair and
+the known reference noise to verify both implementations. The final
+project will test more utterances, noise types and input SNR values.
