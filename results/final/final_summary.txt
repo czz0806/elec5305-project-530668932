@@ -1,0 +1,24 @@
+ELEC5305 Final Project - Controlled Benchmark
+Student: Zhizhong Chen (530668932)
+
+Test design: 8 DNS noise conditions x 4 target SNRs = 32 cases
+Input SNRs: -5, 0, 5 and 10 dB
+STFT: 32 ms periodic Hamming window, 50 percent overlap
+
+Overall mean SNR improvement
+  Spectral subtraction: 2.090 dB
+  Wiener filtering:     2.945 dB
+
+Overall mean log-spectral distance (lower is better)
+  Spectral subtraction: 10.334 dB
+  Wiener filtering:     10.772 dB
+
+Condition wins by SNR improvement
+  Wiener filtering:     32 of 32
+  Spectral subtraction: 0 of 32
+  Ties:                 0 of 32
+
+Important limitation: both methods use the same oracle noise PSD
+estimated from the aligned DNS noise residual. This controlled
+benchmark isolates the gain-rule comparison but is not a causal
+real-time speech-enhancement system.

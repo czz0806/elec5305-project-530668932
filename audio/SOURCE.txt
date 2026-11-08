@@ -1,15 +1,41 @@
-ELEC5305 Feedback Two - Preliminary Audio Pair
+ELEC5305 Final Project - Audio Data Provenance
 
 Source: Microsoft Deep Noise Suppression (DNS) Challenge
 Official repository: https://github.com/microsoft/DNS-Challenge
-Branch: interspeech2020/master
-Dataset path: datasets/test_set/synthetic/no_reverb/
+Dataset location: datasets/test_set/synthetic/no_reverb/
 
-Files:
-1. clean_fileid_268.wav
-   Clean speech reference.
-2. clnsp102_traffic_248091_3_snr0_tl-21_fileid_268.wav
-   Matching noisy speech with traffic noise at 0 dB input SNR.
+The final controlled benchmark uses eight aligned 10-second, 16 kHz,
+single-channel clean/noisy pairs. The noisy filenames identify the original
+DNS noise category and the clean filename shares the same file ID.
 
-These files are an aligned 10-second, 16 kHz test pair from the official
-DNS Challenge repository. They are used here for a preliminary prototype.
+Noise category     File ID   Clean file             Matching DNS noisy file
+---------------    -------   --------------------   -----------------------------------------------------
+Traffic              268     clean_fileid_268.wav   clnsp102_traffic_248091_3_snr0_tl-21_fileid_268.wav
+Babble               147     clean_fileid_147.wav   clnsp25_babble_188218_21_snr5_tl-25_fileid_147.wav
+Wind                 170     clean_fileid_170.wav   clnsp205_wind_407027_1_snr1_tl-24_fileid_170.wav
+Vacuum               192     clean_fileid_192.wav   clnsp186_vacuum_353640_3_snr1_tl-27_fileid_192.wav
+Birds                 44     clean_fileid_44.wav    clnsp17_birds_413745_3_snr2_tl-23_fileid_44.wav
+Bus                  101     clean_fileid_101.wav   clnsp198_bus_56903_0_snr0_tl-32_fileid_101.wav
+Air conditioner       17     clean_fileid_17.wav    clnsp426_air_conditioner_151977_1_snr3_tl-35_fileid_17.wav
+Baby                  72     clean_fileid_72.wav    clnsp146_baby_416657_0_snr9_tl-25_fileid_72.wav
+
+Experimental use
+----------------
+For each aligned pair, the original residual noise is calculated as
+
+    residual noise = DNS noisy recording - DNS clean recording.
+
+The residual is then scaled and remixed with the clean reference at four
+controlled input SNRs: -5, 0, 5 and 10 dB. This gives 32 test conditions.
+The same aligned clean reference and residual noise are used for both methods,
+so method comparisons are paired and reproducible.
+
+Important scope limitation
+--------------------------
+The final benchmark uses an oracle noise-power estimate derived from the known
+aligned noise residual. This design isolates the different spectral gain rules
+used by Wiener filtering and spectral subtraction. It does not represent a
+causal real-time system, where the clean signal and exact noise are unavailable.
+
+The audio files remain subject to the terms and attributions of the official
+Microsoft DNS Challenge repository and its underlying source corpora.
