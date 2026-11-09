@@ -111,10 +111,7 @@ It is not required to run the submitted MATLAB implementation.
 
 ## Video demonstration
 
-**Final video link:** to be added after the demonstration is recorded and
-uploaded. The link must also be added to the final report before Canvas
-submission.
-
+**Final project video (4 min 40 s):** [Watch on YouTube](https://youtu.be/TIqCp_KE7m0)
 ## Key limitations
 
 1. Only eight ten-second utterances are used, so the result should not be
